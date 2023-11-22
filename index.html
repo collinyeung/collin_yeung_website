@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en-CAN">
 <head>
-	<meta charset="UTF-8">
-    
- <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
     <style>
         body {
-          	text-align: right;
-          	font-family: "Courier New", monospace;
+            text-align: right;
+            font-family: "Courier New", monospace;
         }
       
         ul {
             text-align: left;
             list-style-type: none;
             padding: 0;
-            margin: 10px;
+            margin: 0px;
         }
 
         li {
-          	font-size: 25;
-            margin-left: 20px; 
-            margin-top: 10px
+            font-size: 25;
+            left: 20px; 
+            margin-top: 20px;
+            position: relative;
         }
 
         a {
             text-decoration: none;
             color: black; 
+        }
+
+        .hover-image {
+            top: 3px;
+            left: -14px;
+            display: none;
+         		position: absolute;
+        }
+
+        a:hover .hover-image {
+            display: inline;
         }
     </style>
 </head>
@@ -33,14 +44,37 @@
 
     <img src="sign.png" alt="Name" width="400">
     
-     <ul>
-       <b>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Artwork</a></li>
-        <li><a href="#">Photography</a></li>
-        <li><a href="#">Film</a></li>
-        <li><a href="#">Contact</a></li>
-       </b>
+    <ul>
+				<li>
+            <a href="#">
+                    <img src="home.png" alt="home" width="110">
+                    <img class="hover-image" src="circled.png" alt="hover" width="130">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="artwork.png" alt="artwork" width="130">
+                    <img class="hover-image" src="circled.png" alt="hover" width="140">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="photo.png" alt="photo" width="175">
+                    <img class="hover-image" src="circled.png" alt="hover" width="195" height="60">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="film.png" alt="film" width="90">
+                    <img class="hover-image" src="circled.png" alt="hover" width="110" height="40">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="contact.png" alt="contact" width="130">
+                    <img class="hover-image" src="circled.png" alt="hover" width="170" height="50">
+                </a>
+            </li>
     </ul>
 
 </body>

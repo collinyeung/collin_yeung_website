@@ -2,80 +2,106 @@
 <html lang="en-CAN">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Collin</title>
     <style>
-        body {
+        h1 {
             text-align: right;
+        }
+
+        body {
+            text-align: left;
             font-family: "Courier New", monospace;
         }
-      
+
         ul {
-            text-align: left;
             list-style-type: none;
-            padding: 0;
-            margin: 0px;
+            padding: 20px;
         }
 
         li {
-            font-size: 25;
-            left: 20px; 
+            font-size: 25px;
             margin-top: 20px;
             position: relative;
+            float: left;
+            clear: left;
         }
 
         a {
             text-decoration: none;
-            color: black; 
+            color: black;
+            display: block;
         }
 
         .hover-image {
-            top: 3px;
-            left: -14px;
             display: none;
-         		position: absolute;
+            position: absolute;
         }
 
         a:hover .hover-image {
             display: inline;
+          	left: -15px;
         }
+
+        .text-container {
+            margin-left: 250px;
+          	margin-right: 150px;
+       		  margin-top: 0px;
+      }
+
     </style>
 </head>
+
 <body>
 
-    <img src="sign.png" alt="Name" width="400">
-    
-    <ul>
-				<li>
-            <a href="#">
-                    <img src="home.png" alt="home" width="110">
-                    <img class="hover-image" src="circled.png" alt="hover" width="130">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="artwork.png" alt="artwork" width="130">
-                    <img class="hover-image" src="circled.png" alt="hover" width="140">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="photo.png" alt="photo" width="175">
-                    <img class="hover-image" src="circled.png" alt="hover" width="195" height="60">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="film.png" alt="film" width="90">
-                    <img class="hover-image" src="circled.png" alt="hover" width="110" height="40">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="contact.png" alt="contact" width="130">
-                    <img class="hover-image" src="circled.png" alt="hover" width="170" height="50">
-                </a>
-            </li>
-    </ul>
+<h1><img src="sign.png" alt="Name" width="400"></h1>
+
+<ul>
+    <li>
+        <a href="#">
+            <img src="home.png" alt="home" width="110">
+            <img class="hover-image" src="circled.png" alt="hover" width="130">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="artwork.png" alt="artwork" width="130">
+            <img class="hover-image" src="circled.png" alt="hover" width="140">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="photo.png" alt="photo" width="175">
+            <img class="hover-image" src="circled.png" alt="hover" width="195" height="60">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="film.png" alt="film" width="90">
+            <img class="hover-image" src="circled.png" alt="hover" width="110" height="40">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="contact.png" alt="contact" width="130">
+            <img class="hover-image" src="circled.png" alt="hover" width="170" height="50">
+        </a>
+    </li>
+</ul>
+
+<div class="text-container">
+  	<h2>About</h2>
+    <p>
+        Collin is a mixed media artist from Toronto, Ontario who specializes in photo and video editing as well as digital drawing. Taking inspiration from the realms of contemporary fashion, art, photography, and film, his creations embody a unique fusion of diverse influences. With this blend of various elements, he crafts visually stunning works of art.
+    </p>
+
+    <p>
+        Currently enrolled in the Global Business and Digital Arts program at the University of Waterloo, Collin Yeung is not only honing his artistic skills but also gaining a profound understanding of the intersection between creativity and business. His academic pursuits complement his artistic endeavors, allowing him to approach his work with a multifaceted perspective.
+    </p>
+
+    <p>
+        Collin's art pushes beyond conventional boundaries, pushing the limits of what is possible in the realm of mixed media. With an eye for detail and a passion for innovation, he invites viewers into a world where the new digital and traditional mediums converge.
+    </p>
+</div>
 
 </body>
 </html>

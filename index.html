@@ -7,38 +7,68 @@
     <style>
         h1 {
             text-align: right;
-          	margin-right: 40px;
-          	font-size: 20px;
-          	font-family: "Courier New", monospace;
+            margin-right: 40px;
+            font-size: 20px;
+            font-family: "Courier New", monospace;
+            position: fixed; /* Make the sign.png fixed */
+            top: -30; /* Position it at the top */
+            left: 0; /* Position it at the right */
+            padding: 10px; /* Add padding for better appearance */
         }
 
         body {
             background-image: url("back.jpg");
-          	background-repeat: no-repeat;
-          	background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
             text-align: center;
-          	font-size: 16px;
+            font-size: 16px;
             font-family: "Courier New", monospace;
+            display: flex; /* Add this line */
+            flex-direction: column; /* Add this line */
+            align-items: center; /* Add this line */
+            padding-top: 100px; /* Add padding-top to avoid overlapping with the fixed header */
+        }
+      .rect-container {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: 100%;
+      }
+
+        .container {
+            display: flex;
+            justify-content: flex-start; /* Adjusted to move the content to the left */
+            align-items: flex-start; /* Adjusted to align content to the top */
+            width: 80%; /* Adjust as needed */
+            margin-top: 20px; /* Adjust margin-top to create space */
         }
 
         ul {
             list-style-type: none;
-            margin-left: 10%;
-            margin-right: 10%;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            width: 20%; /* Adjust as needed */
+            position: fixed; /* Make the list fixed */
+            left: 0; /* Position it at the left */
+            top: 100px; /* Position it below the fixed header */
+            
         }
 
         li {
             font-size: 25px;
-            margin-left: 10px;
-            margin-right: 10px;
-            position: relative;
-            display: inline-block;
+            left: 60px;
+            top: 100px;
+            position: relative; /* Add this line */
         }
 
         a {
             text-decoration: none;
             color: black;
             display: block;
+            margin-bottom: 20px;
         }
 
         .hover-image {
@@ -46,93 +76,92 @@
             position: absolute;
         }
 
-        a:hover .hover-image {
+        li:hover .hover-image { /* Adjusted to target hover effect on li */
             display: inline;
             left: -20px;
             bottom: -5px;
         }
 
         .text-container {
+            width: 40%; /* Adjust as needed */
+            margin-left: 200px; /* Adjust margin-left to create space */
             text-align: left;
-            width: 30%;
-            margin-left: 23%;
-          	margin-right: -300px;
-            margin-top: 30px;
-            float: left; 
+            
+            
         }
 
         .image-container {
-            width: 50%; 
-            float: right;
-          	margin-top: -50px;
-          	margin-right: 40px;
+            width: 40%; /* Adjust as needed */
+            margin-left: -100px; /* Adjust margin-left to create space */
         }
     </style>
 </head>
 
 <body>
+<div class="rect-container">
+  </div>
+    <h1><img src="sign.png" alt="Name" width="280"></h1>
 
-    <h1><img src="sign.png" alt="Name" width="350"></h1>
+    <div class="container">
+        <ul>
+            <li>
+                <a href="">
+                    HOME
+                    <img class="hover-image" src="circled.png" alt="hover" width="100">
+                </a>
+            </li>
+            <li>
+                <a href="https://collinyeung.github.io/artwork/">
+                    ARTWORK
+                    <img class="hover-image" src="circled.png" alt="hover" width="140" height="40">
+                </a>
+            </li>
+            <li>
+                <a href="https://collinyeung.github.io/photography/">
+                    PHOTOGRAPHY
+                    <img class="hover-image" src="circled.png" alt="hover" width="205" height="40">
+                </a>
+            </li>
+            <li>
+                <a href="https://collinyeung.github.io/film/">
+                    FILM
+                    <img class="hover-image" src="circled.png" alt="hover" width="100" height="40">
+                </a>
+            </li>
+            <li>
+                <a href="https://collinyeung.github.io/contact/">
+                    CONTACT
+                    <img class="hover-image" src="circled.png" alt="hover" width="140" height="40">
+                </a>
+            </li>
+        </ul>
 
-    <ul>
-        <li>
-            <a href="">
-                HOME
-                <img class="hover-image" src="circled.png" alt="hover" width="100">
-            </a>
-        </li>
-        <li>
-            <a href="https://collinyeung.github.io/artwork/">
-                ARTWORK
-                <img class="hover-image" src="circled.png" alt="hover" width="140" height="40">
-            </a>
-        </li>
-        <li>
-            <a href="https://collinyeung.github.io/photography/">
-                PHOTOGRAPHY
-                <img class="hover-image" src="circled.png" alt="hover" width="205" height="40">
-            </a>
-        </li>
-        <li>
-            <a href="https://collinyeung.github.io/film/">
-                FILM
-                <img class="hover-image" src="circled.png" alt="hover" width="100" height="40">
-            </a>
-        </li>
-        <li>
-            <a href="https://collinyeung.github.io/contact/">
-                CONTACT
-                <img class="hover-image" src="circled.png" alt="hover" width="140" height="40">
-            </a>
-        </li>
-    </ul>
+        <div class="text-container">
+            <img src="home.png" alt="home" width="170">
 
-    <div class="text-container">
-        <img src="home.png" alt="home" width="170">
+            <p>
+                Collin is a mixed media artist from Toronto, Ontario who specializes in photo and video editing as well
+                as digital drawing. Taking inspiration from the realms of contemporary fashion, art, photography, and
+                film, his creations embody a unique fusion of diverse influences. With this blend of various elements,
+                he crafts visually stunning works of art.
+            </p>
 
-        <p>
-            Collin is a mixed media artist from Toronto, Ontario who specializes in photo and video editing as well
-            as digital drawing. Taking inspiration from the realms of contemporary fashion, art, photography, and
-            film, his creations embody a unique fusion of diverse influences. With this blend of various elements,
-            he crafts visually stunning works of art.
-        </p>
+            <p>
+                Currently enrolled in the Global Business and Digital Arts program at the University of Waterloo,
+                Collin Yeung is honing his skills between creativity, technology, and business.
+            </p>
 
-        <p>
-            Currently enrolled in the Global Business and Digital Arts program at the University of Waterloo,
-            Collin Yeung is honing his skills between creativity, technology, and business. 
-        </p>
+            <p>
+                Collin's art pushes beyond conventional boundaries, inviting viewers into a world
+                where the worlds of digital and traditional mediums collide.
+            </p>
+        </div>
 
-        <p>
-            Collin's art pushes beyond conventional boundaries, inviting viewers into a world
-            where the worlds of digital and traditional mediums collide.
-        </p>
-    </div>
-
-    <div class="image-container">
-        <img src="me.png" alt="me" width="600">
+        <div class="image-container">
+            <img src="me.png" alt="me" width="600">
+        </div>
     </div>
 
 </body>
 
 </html>
-
